@@ -193,37 +193,42 @@
     </div>
 
     <!-- DIV de produtos e parceiros com slide show-->
-    <div id="prod/serviço" class="w3-container w3-light-grey w3-padding-64 w3-center"></div>
-    <h1 class="w3-xxlarge w3-text-dark-grey w3-center"><b>Conheça nossos Produtos e Serviços</b></h1>
-    <div class="w3-content w3-section w3-center" style="max-width:900px">
-      <img class="slide" src="imagens/Nuvem e Migração.png" style="width:100%">
-      <img class="slide" src="imagens/Consultoria Estratégica em Transformação Digital.png" style="width:100%">
-      <img class="slide" src="imagens/Cibersegurança e Resiliência.png" style="width:100%">
-      <img class="slide" src="imagens/Automação e Inteligência de Dados.png" style="width:100%">
-      <a href="#">Automação, Consultoria Estratégica, Cibersegurança e Migração de serviços para nuvem</a>
-      <br>
+    <div id="prod/serviço" class="w3-content w3-display-container w3-center">
+      <h1 class="w3-xxlarge w3-text-dark-grey"><b>Conheça nossos Produtos e Serviços</b></h1>
+      <div class="w3-padding-32"></div>
+      <!--Imagens criadas usando a IA do Google Nano banana-->
+      <img class="slides" src="imagens/Nuvem e Migração.png" style="width:100%">
+      <img class="slides" src="imagens/Automação e Inteligência de Dados.png" style="width:100%">
+      <img class="slides" src="imagens/Cibersegurança e Resiliência.png" style="width:100%">
+      <img class="slides" src="imagens/Consultoria Estratégica em Transformação Digital.png" style="width:100%">
 
+      <a href="#">1.Migração de servços para a nuvem 2.Automação 3.Ciber segurança 4.Consultoria Estratégica </a><br>
+
+      <!--Botões de avanço e retrocesso-->
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
+    <!--Script de Slide show manual apresentado na agenda 16, a versão automatica esta no github-->
     <script>
-      var index = 0;
-      carousel();
+      var slideIndex = 1;
+      showDivs(slideIndex);
 
-      function carousel() {
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
         var i;
-        var x = document.getElementsByClassName("slide");
+        var x = document.getElementsByClassName("slides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
         }
-        index++;
-        if (index > x.length) { index = 1 }
-        x[index - 1].style.display = "block";
-        setTimeout(carousel, 2000); //Imagem é trocada a cada 3 segundos
+        x[slideIndex - 1].style.display = "block";
       }
     </script>
-
-
-    <!--Aqui termina o slideshow-->
 
     <div id="faq" class="w3-container w3-padding-64">
       <h1 class="w3-xxlarge w3-center"><b>FAQ</b> - Perguntas Frequentes</h1>

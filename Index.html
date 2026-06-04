@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>ConectaByte | Soluções Digitais</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilização criada com a ajuda da IA Google Gemini -->
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+      background-color: #f4f7f9;
+    }
+
+    .w3-sidebar {
+      width: 150px;
+      background: #001f3f;
+      color: #fff;
+    }
+
+    .cb-main {
+      margin-left: 140px
+    }
+
+    .cb-accent {
+      color: #00e5ff;
+    }
+
+    .cb-bg-dark {
+      background-color: #001f3f;
+      color: white;
+    }
+
+    .partner-logo {
+      transition: 0.3s;
+      width: 120px;
+      margin: 25px;
+      cursor: pointer;
+    }
+
+    .partner-logo:hover {
+      transform: scale(1.1);
+    }
+
+    .logo-aws {
+      color: #FF9900;
+    }
+
+    .logo-ms {
+      color: #00a4ef;
+    }
+
+    .logo-google {
+      color: #4285F4;
+    }
+
+    .logo-apple {
+      color: #555555;
+    }
+
+    .logo-linux {
+      color: #333333;
+    }
+
+    footer i {
+      font-size: 24px;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    footer i:hover {
+      color: #00e5ff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-divider {
+      border-bottom: 2px solid #00e5ff;
+      width: 50px;
+      margin-bottom: 20px;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--  A barra lateral para exibir os ícones na vertical -->
+  <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+    <div class="w3-padding-32">
+      <i class="fa-solid fa-microchip w3-xxlarge cb-accent"></i>
+    </div>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-24 w3-hover-light-grey">
+      <i class="fa-solid fa-house w3-xlarge"></i><br>HOME
+    </a>
+    <a href="#parceiros" class="w3-bar-item w3-button w3-padding-24 w3-hover-light-grey">
+      <i class="fa-solid fa-handshake w3-xlarge"></i><br>PARCEIROS
+    </a>
+    <!-- ìcone acrescentado de SERVIÇOS/PRODUTOS-->
+    <a href="#prod/serviço" class="w3-bar-item w3-button w3-padding-24 w3-hover-light-grey">
+      <i class="fa-solid fa-gear w3-xlarge"></i><br>PROD/SERVIÇO
+    </a>
+    <a href="#faq" class="w3-bar-item w3-button w3-padding-24 w3-hover-light-grey">
+      <i class="fa-solid fa-circle-question w3-xlarge"></i><br>FAQ
+    </a>
+    <a href="#contato" class="w3-bar-item w3-button w3-padding-24 w3-hover-light-grey">
+      <i class="fa-solid fa-envelope w3-xlarge"></i><br>CONTATO
+    </a>
+  </nav>
+
+  <div class="cb-main">
+
+    <header id="home" class="w3-container w3-padding-64 w3-center cb-bg-dark">
+      <h1 class="w3-jumbo"><b>Conecta<span class="cb-accent">Byte</span></b></h1>
+      <p class="w3-xlarge">Liderando a fronteira da inovação tecnológica global.</p>
+    </header>
+
+    <!--  DIV usando o W3.CSS para apresentara a empresa e exibir a missão, visão e valores -->
+    <div class="w3-container w3-padding-64">
+      <div class="w3-row-padding w3-margin-bottom">
+        <div class="w3-col m5 w3-center">
+          <img src="imagens/ProcessadorPagInicial.avif" alt="Processador ConectaByte"
+            class="w3-image w3-round-large w3-card-4">
+        </div>
+        <div class="w3-col m7">
+          <h2 class="w3-text-dark-grey"><b>Nossa Trajetória</b></h2>
+          <div class="section-divider"></div>
+          <p class="text-justify">Fundada em 2014, a ConectaByte surgiu da visão de engenheiros apaixonados por resolver
+            problemas complexos através da automação e do processamento de dados. O que começou em uma pequena garagem
+            dedicada à manutenção de sistemas críticos, rapidamente escalou para uma consultoria global de arquitetura
+            em nuvem e cibersegurança. Ao longo de uma década, superamos os desafios das constantes mudanças do mercado
+            digital, consolidando-nos como o parceiro estratégico de muitas empresas que buscam não apenas sobreviver,
+            mas prosperar na era da transformação tecnológica. Nossa história é escrita diariamente por cada linha de
+            código que otimizamos e por cada infraestrutura resiliente que construímos para as empresas parceiras.</p>
+        </div>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col m12 w3-margin-bottom">
+          <h4 class="w3-text-indigo"><b><i class="fa-solid fa-bullseye"></i> Missão</b></h4>
+          <p class="text-justify">Nossa missão fundamental é democratizar o acesso a soluções tecnológicas de alta
+            performance, simplificando a complexidade do mundo digital para nossos clientes. Empenhamos nossos esforços
+            para desenvolver sistemas que aumentem a produtividade humana, garantindo que a tecnologia seja uma ponte, e
+            não uma barreira, para o sucesso empresarial e o bem-estar social.</p>
+        </div>
+
+        <div class="w3-col m12 w3-margin-bottom">
+          <h4 class="w3-text-indigo"><b><i class="fa-solid fa-eye"></i> Visão</b></h4>
+          <p class="text-justify">Aspiramos ser reconhecidos como o maior ecossistema de integração tecnológica da
+            América Latina até 2030. Nossa visão é moldar um futuro onde a inteligência artificial e a infraestrutura de
+            dados operem em perfeita harmonia, tornando as cidades mais inteligentes e as empresas mais sustentáveis
+            através de soluções que antecipam as necessidades das próximas gerações.</p>
+        </div>
+
+        <div class="w3-col m12 w3-margin-bottom">
+          <h4 class="w3-text-indigo"><b><i class="fa-solid fa-gem"></i> Valores</b></h4>
+          <p class="text-justify">Nossos pilares são sustentados pela <b>Integridade Radical</b> em todas as relações
+            comerciais, pela <b>Inovação Disruptiva</b> que nos impede de estagnar, e pela <b>Empatia Tecnológica</b>,
+            que nos faz olhar para o usuário humano por trás de cada tela. Acreditamos na transparência absoluta, na
+            segurança de dados como um direito fundamental e na busca incessante pela excelência em cada entrega.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="parceiros" class="w3-container w3-light-grey w3-padding-64 w3-center">
+      <h1 class="w3-xxlarge w3-text-dark-grey"><b>Ecossistema de Parceiros</b></h1>
+      <p>Integramos as melhores tecnologias do planeta para entregar resultados extraordinários.</p>
+      <div class="w3-padding-32">
+        <i class="fa-brands fa-aws fa-6x partner-logo logo-aws" title="AWS"></i>
+        <i class="fa-brands fa-microsoft fa-6x partner-logo logo-ms" title="Microsoft"></i>
+        <i class="fa-brands fa-google fa-6x partner-logo logo-google" title="Google Cloud"></i>
+        <i class="fa-brands fa-apple fa-6x partner-logo logo-apple" title="Apple"></i>
+        <i class="fa-brands fa-linux fa-6x partner-logo logo-linux" title="Linux"></i>
+      </div>
+    </div>
+
+    <!-- DIV de produtos e parceiros com slide show-->
+    <div id="prod/serviço" class="w3-container w3-light-grey w3-padding-64 w3-center"></div>
+    <h1 class="w3-xxlarge w3-text-dark-grey w3-center"><b>Conheça nossos Produtos e Serviços</b></h1>
+    <div class="w3-content w3-section w3-center" style="max-width:900px">
+      <img class="slide" src="imagens/Nuvem e Migração.png" style="width:100%">
+      <img class="slide" src="imagens/Consultoria Estratégica em Transformação Digital.png" style="width:100%">
+      <img class="slide" src="imagens/Cibersegurança e Resiliência.png" style="width:100%">
+      <img class="slide" src="imagens/Automação e Inteligência de Dados.png" style="width:100%">
+      <a href="#">Automação, Consultoria Estratégica, Cibersegurança e Migração de serviços para nuvem</a>
+      <br>
+
+    </div>
+
+    <script>
+      var index = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) { index = 1 }
+        x[index - 1].style.display = "block";
+        setTimeout(carousel, 2000); //Imagem é trocada a cada 3 segundos
+      }
+    </script>
+
+
+    <!--Aqui termina o slideshow-->
+
+    <div id="faq" class="w3-container w3-padding-64">
+      <h1 class="w3-xxlarge w3-center"><b>FAQ</b> - Perguntas Frequentes</h1>
+      <div class="w3-content" style="max-width:800px">
+        <div class="w3-card w3-white w3-margin-bottom">
+          <header class="w3-container w3-light-blue">
+            <h4>A ConectaByte oferece suporte 24/7?</h4>
+          </header>
+          <div class="w3-container">
+            <p>Sim, todos os nossos planos corporativos incluem suporte técnico ininterrupto através de nossos canais
+              digitais.</p>
+          </div>
+        </div>
+
+        <div class="w3-card w3-white w3-margin-bottom">
+          <header class="w3-container w3-light-blue">
+            <h4>Quais as formas de pagamento disponíveis?</h4>
+          </header>
+          <div class="w3-container">
+            <p>Aceitamos faturamento via boleto bancário para empresas, cartões de crédito e criptoativos (BTC/ETH).</p>
+          </div>
+        </div>
+
+        <div class="w3-card w3-white w3-margin-bottom">
+          <header class="w3-container w3-light-blue">
+            <h4>Como posso solicitar um orçamento?</h4>
+          </header>
+          <div class="w3-container">
+            <p>Basta clicar no ícone de contato na barra lateral ou preencher o formulário no rodapé desta página.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Rodapé desenvolvido com a ajuda da IA, os links das redes sociais não estão ativos, para tanto, existe um "#"-->
+    <footer id="contato" class="w3-container w3-padding-64 cb-bg-dark w3-center">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h4><i class="fa-solid fa-location-dot cb-accent"></i> Sede ConectaByte</h4>
+          <p>Hub de Inovação, Sala 101, São Paulo - SP</p>
+        </div>
+        <div class="w3-third">
+          <h4><i class="fa-solid fa-phone cb-accent"></i> Central</h4>
+          <p>0800 591 8888</p>
+        </div>
+        <div class="w3-third">
+          <h4><i class="fa-solid fa-envelope cb-accent"></i> Contato</h4>
+          <p>suporte@conectabyte.com.br</p>
+        </div>
+      </div>
+
+      <div class="w3-section w3-padding-32">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="w3-small">© 2026 ConectaByte. Tecnologia de ponta, ética e conexões reais.</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
